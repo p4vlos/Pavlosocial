@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PavloSocial/SignInVC.swift"
@@ -17,7 +17,7 @@
             endingLineNumber = "6">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PavloSocial.SignInVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PavloSocial.SignInVC"
@@ -32,7 +32,7 @@
                   offsetFromSymbolStart = "107">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PavloSocial.SignInVC.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PavloSocial.SignInVC"
@@ -47,7 +47,7 @@
                   offsetFromSymbolStart = "23">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PavloSocial.SignInVC.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PavloSocial.SignInVC&gt;"
@@ -62,7 +62,7 @@
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PavloSocial.SignInVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PavloSocial.SignInVC&gt;"
@@ -70,6 +70,97 @@
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/SignInVC.swift"
                   timestampString = "493868226.604946"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PavloSocial/SignInVC.swift"
+            timestampString = "493868792.669783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.SignInVC.__deallocating_deinit"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/SignInVC.swift"
+                  timestampString = "493868792.675311"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.SignInVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PavloSocial.SignInVC"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/SignInVC.swift"
+                  timestampString = "493868792.677905"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "107">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.SignInVC.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PavloSocial.SignInVC"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/SignInVC.swift"
+                  timestampString = "493868792.679273"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.SignInVC.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PavloSocial.SignInVC&gt;"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/SignInVC.swift"
+                  timestampString = "493868792.680564"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.SignInVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PavloSocial.SignInVC&gt;"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/SignInVC.swift"
+                  timestampString = "493868792.681835"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
