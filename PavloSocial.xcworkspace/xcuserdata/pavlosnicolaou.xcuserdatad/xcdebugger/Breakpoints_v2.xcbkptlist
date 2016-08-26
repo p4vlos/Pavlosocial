@@ -186,5 +186,236 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PavloSocial/AppDelegate.swift"
+            timestampString = "493928471.905448"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PavloSocial/AppDelegate.swift"
+            timestampString = "493928400.09259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.AppDelegate.__deallocating_deinit"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493921716.63613"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.AppDelegate.init () -&gt; PavloSocial.AppDelegate"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493921716.63764"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.AppDelegate.__allocating_init () -&gt; PavloSocial.AppDelegate"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493921716.639097"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493921716.64048"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PavloSocial/AppDelegate.swift"
+            timestampString = "493928471.905448"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.AppDelegate.__deallocating_deinit"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493921733.526975"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.AppDelegate.init () -&gt; PavloSocial.AppDelegate"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493921733.52964"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.AppDelegate.__allocating_init () -&gt; PavloSocial.AppDelegate"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493921733.531241"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493921733.534434"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PavloSocial/AppDelegate.swift"
+            timestampString = "493928471.905448"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.AppDelegate.init () -&gt; PavloSocial.AppDelegate"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493928400.235453"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PavloSocial.AppDelegate.__allocating_init () -&gt; PavloSocial.AppDelegate"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493928400.237798"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "PavloSocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavlosnicolaou/OneDrive/workshop/iOS/PavloSocial/PavloSocial/AppDelegate.swift"
+                  timestampString = "493928400.24019"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
