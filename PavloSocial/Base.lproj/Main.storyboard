@@ -88,7 +88,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O6G-nm-owa" customClass="FancyField" customModule="PavloSocial" customModuleProvider="target">
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szM-0J-nMx" customClass="FancyBtn" customModule="PavloSocial" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.86666666670000003" green="0.17254901959999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,6 +96,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="SignInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjq-5C-rP9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -119,6 +122,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Ckh-hc-YPn" secondAttribute="trailing" constant="30" id="zFq-3w-93a"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="3fL-zQ-EWg" id="odm-Kn-6Lg"/>
+                        <outlet property="pwdField" destination="O6G-nm-owa" id="pcF-Ec-cpP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
