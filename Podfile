@@ -11,5 +11,6 @@ target 'PavloSocial' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
+  # pod 'SwiftKeychainWrapper'
 
 end
