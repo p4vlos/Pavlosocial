@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -125,11 +125,30 @@
                     <connections>
                         <outlet property="emailField" destination="3fL-zQ-EWg" id="odm-Kn-6Lg"/>
                         <outlet property="pwdField" destination="O6G-nm-owa" id="pcF-Ec-cpP"/>
+                        <segue destination="q7r-8d-e4I" kind="show" identifier="goToFeed" id="1M6-sM-xt8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="rig-qB-Ak2">
+            <objects>
+                <viewController id="q7r-8d-e4I" customClass="FeedVC" customModule="PavloSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nnb-Ay-I2U"/>
+                        <viewControllerLayoutGuide type="bottom" id="b9P-sK-8TS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mgx-0v-iuB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.44313725490196076" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ueU-D8-Mg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="139"/>
         </scene>
     </scenes>
     <resources>
