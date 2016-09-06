@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
 
 class FeedVC: UIViewController {
 
@@ -14,6 +16,11 @@ class FeedVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func signOutTapped(_ sender: AnyObject) {
+        let keychaineResult = KeychainWrapper.defaultKeychainWrapper().removeObjectForKey(KEY_UID)
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "goToSignIn", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {
