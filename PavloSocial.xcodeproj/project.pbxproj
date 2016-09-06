@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113CE5141D7EF2E100444D22 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CE5131D7EF2E100444D22 /* CircleView.swift */; };
+		113CE5161D7F120B00444D22 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CE5151D7F120B00444D22 /* PostCell.swift */; };
+		113CE5191D7F634C00444D22 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CE5181D7F634C00444D22 /* DataService.swift */; };
+		11D485451D7E649400057DCB /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D485441D7E649400057DCB /* FeedVC.swift */; };
 		3E3C41451D70A49E00732705 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C41441D70A49E00732705 /* FBSDKCoreKit.framework */; };
 		3E3C41471D70A4C200732705 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C41461D70A4C200732705 /* FBSDKLoginKit.framework */; };
 		3E3C41491D70A4CE00732705 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C41481D70A4CE00732705 /* FBSDKShareKit.framework */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113CE5131D7EF2E100444D22 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		113CE5151D7F120B00444D22 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		113CE5181D7F634C00444D22 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		11D485441D7E649400057DCB /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		144DCE3DBC95CF518D6D8B62 /* Pods_PavloSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PavloSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3C41441D70A49E00732705 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = PavloSocial/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		3E3C41461D70A4C200732705 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = PavloSocial/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -62,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113CE5171D7F633D00444D22 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				113CE5181D7F634C00444D22 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		3E4CF57D1D6FD2550065480F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +92,8 @@
 				3E504E521D70490A00DABDB2 /* RoundBtn.swift */,
 				3E504E541D704BD400DABDB2 /* FancyField.swift */,
 				3E504E561D704D1B00DABDB2 /* FancyBtn.swift */,
+				113CE5131D7EF2E100444D22 /* CircleView.swift */,
+				113CE5151D7F120B00444D22 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -84,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				3ED711A21D6FCA37005BA6FB /* SignInVC.swift */,
+				11D485441D7E649400057DCB /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -117,6 +136,7 @@
 		3ED7119F1D6FCA37005BA6FB /* PavloSocial */ = {
 			isa = PBXGroup;
 			children = (
+				113CE5171D7F633D00444D22 /* Services */,
 				3ED38CC41D70759B0068868A /* PavloSocial.entitlements */,
 				3E504E4D1D70474800DABDB2 /* Util */,
 				3E4CF57F1D6FD2630065480F /* Controller */,
@@ -283,13 +303,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113CE5141D7EF2E100444D22 /* CircleView.swift in Sources */,
 				3E504E551D704BD400DABDB2 /* FancyField.swift in Sources */,
 				3ED711A31D6FCA37005BA6FB /* SignInVC.swift in Sources */,
 				3E504E531D70490A00DABDB2 /* RoundBtn.swift in Sources */,
 				3ED711A11D6FCA37005BA6FB /* AppDelegate.swift in Sources */,
+				113CE5191D7F634C00444D22 /* DataService.swift in Sources */,
+				11D485451D7E649400057DCB /* FeedVC.swift in Sources */,
 				3E504E4C1D7046C900DABDB2 /* FancyView.swift in Sources */,
 				3E504E511D70477700DABDB2 /* Constants.swift in Sources */,
 				3E504E571D704D1B00DABDB2 /* FancyBtn.swift in Sources */,
+				113CE5161D7F120B00444D22 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B27902C10DBEA842809337DB /* Pods-PavloSocial.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PavloSocial/PavloSocial.entitlements;
 				DEVELOPMENT_TEAM = 82NW4DUZG8;
@@ -433,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4CA6A1095E086E8BA793077 /* Pods-PavloSocial.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PavloSocial/PavloSocial.entitlements;
 				DEVELOPMENT_TEAM = 82NW4DUZG8;
