@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113CE5141D7EF2E100444D22 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CE5131D7EF2E100444D22 /* CircleView.swift */; };
 		11D485451D7E649400057DCB /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D485441D7E649400057DCB /* FeedVC.swift */; };
 		3E3C41451D70A49E00732705 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C41441D70A49E00732705 /* FBSDKCoreKit.framework */; };
 		3E3C41471D70A4C200732705 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C41461D70A4C200732705 /* FBSDKLoginKit.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113CE5131D7EF2E100444D22 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		11D485441D7E649400057DCB /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		144DCE3DBC95CF518D6D8B62 /* Pods_PavloSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PavloSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3C41441D70A49E00732705 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = PavloSocial/FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				3E504E521D70490A00DABDB2 /* RoundBtn.swift */,
 				3E504E541D704BD400DABDB2 /* FancyField.swift */,
 				3E504E561D704D1B00DABDB2 /* FancyBtn.swift */,
+				113CE5131D7EF2E100444D22 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113CE5141D7EF2E100444D22 /* CircleView.swift in Sources */,
 				3E504E551D704BD400DABDB2 /* FancyField.swift in Sources */,
 				3ED711A31D6FCA37005BA6FB /* SignInVC.swift in Sources */,
 				3E504E531D70490A00DABDB2 /* RoundBtn.swift in Sources */,
