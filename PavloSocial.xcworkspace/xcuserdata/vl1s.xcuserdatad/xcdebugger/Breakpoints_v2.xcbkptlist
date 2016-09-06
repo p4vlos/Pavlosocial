@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PavloSocial/FeedVC.swift"
-            timestampString = "494855362.521568"
+            timestampString = "494867239.504638"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "signOutTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>

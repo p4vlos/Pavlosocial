@@ -203,14 +203,16 @@
                                     <constraint firstAttribute="height" constant="65" id="qMz-kt-BES"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="411" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dM1-iH-MIL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="411" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dM1-iH-MIL">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="411" id="Ie3-80-AmQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="411" id="Ie3-80-AmQ" customClass="PostCell" customModule="PavloSocial" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="411"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ie3-80-AmQ" id="ezX-FC-5LY">
-                                            <frame key="frameInset" width="375" height="410"/>
+                                            <frame key="frameInset" width="375" height="411"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7f9-DN-bXm" customClass="FancyView" customModule="PavloSocial" customModuleProvider="target">
@@ -224,7 +226,7 @@
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaB-eq-wgp">
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.96999999999999997" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -244,7 +246,7 @@
                                                                             <color key="textColor" red="0.8666666666666667" green="0.17254901960784313" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="clK-p7-mPe" customClass="CircleView" customModule="PavloSocial" customModuleProvider="target">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="clK-p7-mPe">
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="fO6-aI-6cT"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="i2E-JU-5bR"/>
@@ -255,6 +257,9 @@
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ana-pP-Ca4"/>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i8T-4R-Aqk">
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="GaG-HI-fVW"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -273,13 +278,22 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="7f9-DN-bXm" firstAttribute="leading" secondItem="ezX-FC-5LY" secondAttribute="leadingMargin" constant="8" id="3Ax-ib-7sK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7f9-DN-bXm" secondAttribute="bottom" id="AHg-n9-Wey"/>
                                                 <constraint firstItem="7f9-DN-bXm" firstAttribute="top" secondItem="ezX-FC-5LY" secondAttribute="topMargin" constant="8" id="K0w-RY-qh5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7f9-DN-bXm" secondAttribute="bottom" constant="8" id="POw-3P-Mu7"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7f9-DN-bXm" secondAttribute="trailing" constant="8" id="j2S-Ib-nho"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="7f9-DN-bXm" secondAttribute="bottom" constant="8" id="xUX-td-CEc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="i8T-4R-Aqk" id="2ys-a4-2mh"/>
+                                            <outlet property="likesLbl" destination="RaB-eq-wgp" id="zBU-aX-Bm8"/>
+                                            <outlet property="postImg" destination="Ana-pP-Ca4" id="UHD-Si-Phm"/>
+                                            <outlet property="profileImg" destination="mBI-sI-AI6" id="yv3-9z-0F2"/>
+                                            <outlet property="usernameLbl" destination="nlI-fq-YsL" id="O54-4l-4I1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -299,6 +313,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="dM1-iH-MIL" id="7IL-Xg-3VC"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="tMY-lG-gSv"/>
                     </connections>
                 </viewController>
