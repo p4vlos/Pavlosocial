@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112CFEB31D7FA3A300C62E52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112CFEB21D7FA3A300C62E52 /* Post.swift */; };
 		113CE5141D7EF2E100444D22 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CE5131D7EF2E100444D22 /* CircleView.swift */; };
 		113CE5161D7F120B00444D22 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CE5151D7F120B00444D22 /* PostCell.swift */; };
 		113CE5191D7F634C00444D22 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CE5181D7F634C00444D22 /* DataService.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		112CFEB21D7FA3A300C62E52 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		113CE5131D7EF2E100444D22 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		113CE5151D7F120B00444D22 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		113CE5181D7F634C00444D22 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		3E4CF57D1D6FD2550065480F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				112CFEB21D7FA3A300C62E52 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				113CE5141D7EF2E100444D22 /* CircleView.swift in Sources */,
 				3E504E551D704BD400DABDB2 /* FancyField.swift in Sources */,
 				3ED711A31D6FCA37005BA6FB /* SignInVC.swift in Sources */,
+				112CFEB31D7FA3A300C62E52 /* Post.swift in Sources */,
 				3E504E531D70490A00DABDB2 /* RoundBtn.swift in Sources */,
 				3ED711A11D6FCA37005BA6FB /* AppDelegate.swift in Sources */,
 				113CE5191D7F634C00444D22 /* DataService.swift in Sources */,
