@@ -10,10 +10,13 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
+    
+    @IBOutlet weak var imageAdd: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +24,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
+        
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
-            
             self.posts = [] // THIS IS THE NEW LINE
-            
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
                     print("SNAP: \(snap)")
@@ -37,7 +42,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             self.tableView.reloadData()
         })
-        
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -57,6 +61,21 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         } else {
             return PostCell()
         }
+    }
+    
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            imageAdd.image = image
+            //imageSelected = true
+        } else {
+            print("JESS: A valid image wasn't selected")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+
+
+    @IBAction func addImageTapped(_ sender: AnyObject) {
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func signOutTapped(_ sender: AnyObject) {

@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PavloSocial/FeedVC.swift"
-            timestampString = "494909201.473725"
+            timestampString = "494945921.669941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "signOutTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PavloSocial/FeedVC.swift"
-            timestampString = "494909201.473725"
+            timestampString = "494945921.669941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "signOutTapped(_:)"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "addImageTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PavloSocial/FeedVC.swift"
-            timestampString = "494905394.360538"
+            timestampString = "494946002.94897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PavloSocial/FeedVC.swift"
-            timestampString = "494905394.360538"
+            timestampString = "494945921.669941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "addImageTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
