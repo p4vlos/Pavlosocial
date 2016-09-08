@@ -19,7 +19,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
-    var imageSelected = false
+    //var imageSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,10 +71,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         }
     }
     
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    //func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
-            imageSelected = true
+            //imageSelected = true
         } else {
             print("PAV: A valid image wasn't selected")
         }
@@ -90,7 +91,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             print("PAV: Caption must be entered")
             return
         }
-        guard let img = imageAdd.image, imageSelected == true else {
+        guard let img = imageAdd.image else {
+        //åguard let img = imageAdd.image, imageSelected == true else {
             print("PAV: An image must be selected")
             return
         }
@@ -103,13 +105,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             
             DataService.ds.REF_POST_IMAGES.child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
                 if error != nil {
-                    print("PAV: Unable to upload image to Firebase storage")
+                    print("PAV: Unable to upload image to Firebasee torage")
                 } else {
-                    print("PAV: Successfully uploaded image to Firebase storage")
-                    let downloadURL = metadata?.downloadURL()?.absoluteString
+                    print("PAVs: Successfully uploaded image to Firebase storage")
+                    _ = metadata?.downloadURL()?.absoluteString
                 }
             }
-            
         }
     }
 
