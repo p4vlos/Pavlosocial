@@ -261,7 +261,7 @@
                                                                             <color key="textColor" red="0.8666666666666667" green="0.17254901960784313" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="clK-p7-mPe">
+                                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="clK-p7-mPe">
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="fO6-aI-6cT"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="i2E-JU-5bR"/>
@@ -303,6 +303,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="i8T-4R-Aqk" id="2ys-a4-2mh"/>
+                                            <outlet property="likeImg" destination="clK-p7-mPe" id="Vcs-7C-GZY"/>
                                             <outlet property="likesLbl" destination="RaB-eq-wgp" id="zBU-aX-Bm8"/>
                                             <outlet property="postImg" destination="Ana-pP-Ca4" id="UHD-Si-Phm"/>
                                             <outlet property="profileImg" destination="mBI-sI-AI6" id="yv3-9z-0F2"/>
