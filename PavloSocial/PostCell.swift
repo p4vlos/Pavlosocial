@@ -29,15 +29,16 @@ class PostCell: UITableViewCell {
         self.caption.text = post.caption
         self.likesLbl.text = "\(post.likes)"
         
+        
         if img != nil {
             self.postImg.image = img
         } else {
             let ref = FIRStorage.storage().reference(forURL: post.imageUrl)
-            ref.data(withMaxSize: 2 * 3000 * 3000, completion: { (data, error) in
+            ref.data(withMaxSize: 2 * 5000 * 5000, completion: { (data, error) in
                 if error != nil {
-                    print("JESS: Unable to download image from Firebase storage")
+                    print("PAV: Unable to download image from Firebase storage")
                 } else {
-                    print("Jess: Image downloaded from Firebase storage")
+                    print("PAV: Image downloaded from Firebase storage")
                     if let imgData = data {
                         if let img = UIImage(data: imgData) {
                             self.postImg.image = img
