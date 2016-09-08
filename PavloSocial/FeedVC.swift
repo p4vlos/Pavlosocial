@@ -108,7 +108,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 if error != nil {
                     print("PAV: Unable to upload image to Firebasee torage")
                 } else {
-                    print("PAVs: Successfully uploaded image to Firebase storage")
+                    //print("PAVs: Successfully uploaded image to Firebase storage")
                     _ = metadata?.downloadURL()?.absoluteString
                 }
             }
