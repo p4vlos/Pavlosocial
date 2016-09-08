@@ -93,7 +93,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             return
         }
         //guard let img = imageAdd.image else {
-        //guard let img = imageAdd.image, imageSelected == true else {
+        guard let img = imageAdd.image, imageSelected == true else {
             print("PAV: An image must be selected")
             return
         }
