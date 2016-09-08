@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -179,12 +179,16 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QXw-tr-5Nb">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-5E-Asn" customClass="CircleView" customModule="PavloSocial" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-5E-Asn" customClass="CircleView" customModule="PavloSocial" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.0" green="0.51372549019607838" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="pb4-Es-JKe"/>
                                                     <constraint firstAttribute="width" constant="49" id="vrK-Jb-5As"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="7dq-KC-gPM" appends="YES" id="ykC-i1-uxa"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="muU-Cy-WlK" customClass="FancyField" customModule="PavloSocial" customModuleProvider="target">
                                                 <nil key="textColor"/>
@@ -198,6 +202,9 @@
                                                     <constraint firstAttribute="width" constant="49" id="yQB-Dk-TWL"/>
                                                 </constraints>
                                                 <state key="normal" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="q7r-8d-e4I" eventType="touchUpInside" id="1Rf-lu-8Qz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -291,7 +298,6 @@
                                                 <constraint firstItem="7f9-DN-bXm" firstAttribute="leading" secondItem="ezX-FC-5LY" secondAttribute="leadingMargin" constant="8" id="3Ax-ib-7sK"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="7f9-DN-bXm" secondAttribute="bottom" id="AHg-n9-Wey"/>
                                                 <constraint firstItem="7f9-DN-bXm" firstAttribute="top" secondItem="ezX-FC-5LY" secondAttribute="topMargin" constant="8" id="K0w-RY-qh5"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="7f9-DN-bXm" secondAttribute="bottom" constant="8" id="POw-3P-Mu7"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7f9-DN-bXm" secondAttribute="trailing" constant="8" id="j2S-Ib-nho"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -321,6 +327,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="muU-Cy-WlK" id="Dqo-3I-U5T"/>
+                        <outlet property="imageAdd" destination="ehA-5E-Asn" id="mbm-wy-yFc"/>
                         <outlet property="tableView" destination="dM1-iH-MIL" id="7IL-Xg-3VC"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="tMY-lG-gSv"/>
                     </connections>
@@ -329,6 +337,11 @@
                 <tapGestureRecognizer id="7Rt-Kh-XA7">
                     <connections>
                         <action selector="signOutTapped:" destination="q7r-8d-e4I" id="LMi-3K-4Gi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7dq-KC-gPM">
+                    <connections>
+                        <action selector="addImageTapped:" destination="q7r-8d-e4I" id="BoL-YT-Ib6"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
