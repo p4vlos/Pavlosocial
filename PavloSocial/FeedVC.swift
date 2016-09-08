@@ -19,7 +19,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
-    //var imageSelected = false
+    var imageSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +75,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     //func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
-            //imageSelected = true
+            imageSelected = true
         } else {
             print("PAV: A valid image wasn't selected")
         }
@@ -91,8 +91,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             print("PAV: Caption must be entered")
             return
         }
-        guard let img = imageAdd.image else {
-        //åguard let img = imageAdd.image, imageSelected == true else {
+        //guard let img = imageAdd.image else {
+        guard let img = imageAdd.image, imageSelected == true else {
             print("PAV: An image must be selected")
             return
         }
@@ -113,8 +113,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             }
         }
     }
-
-    
     
     @IBAction func signOutTapped(_ sender: AnyObject) {
         _ = KeychainWrapper.defaultKeychainWrapper().removeObjectForKey(KEY_UID)
