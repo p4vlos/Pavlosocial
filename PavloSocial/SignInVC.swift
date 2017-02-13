@@ -24,7 +24,7 @@ class SignInVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if let _ = KeychainWrapper.defaultKeychainWrapper().stringForKey(KEY_UID) {
+        if let _ = KeychainWrapper.defaultKeychainWrapper.string(KEY_UID) {
             print("PAV: ID found in keychain")
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
@@ -90,7 +90,8 @@ class SignInVC: UIViewController {
     
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
         DataService.ds.createFirbaseDBUser(uid: id, userData: userData)
-        let keychainResult = KeychainWrapper.defaultKeychainWrapper().setString(id , forKey: KEY_UID)
+        let keychainResult = KeychainWrapper.defaultKeychainWrapper.set(String, forKey: KEY_UID)
+        //let keychainResult = KeychainWrapper.defaultKeychainWrapper.setString(id , forKey: KEY_UID)
         print("PAV: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
     }

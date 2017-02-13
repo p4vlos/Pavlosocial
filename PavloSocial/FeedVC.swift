@@ -139,7 +139,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     
     @IBAction func signOutTapped(_ sender: AnyObject) {
-        _ = KeychainWrapper.defaultKeychainWrapper().removeObjectForKey(KEY_UID)
+        _ = KeychainWrapper.defaultKeychainWrapper.removeObject(forKey: KEY_UID)
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "goToSignIn", sender: nil)
     }
